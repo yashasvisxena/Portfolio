@@ -1,7 +1,7 @@
 import profile from "./images/profile.jpg";
 function Cover() {
   return (
-    <div className="cover flex-col h-full w-full rounded-xl bg-cover backdrop-blur mb-5" id="about">
+    <div className="cover flex-col h-full w-full rounded-xl bg-[('src/Components/images/back.png')] bg-cover backdrop-blur mb-5" id="about">
       <div className="backdrop-blur-md flex h-full w-full p-6 rounded-xl items-center justify-around">
         <div className="flex h-full w-4/6 items-center">
           <img
