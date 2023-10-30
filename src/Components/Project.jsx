@@ -2,7 +2,7 @@ import Cards from "./Cards";
 import spotify from "./images/spotify.png";
 import blipkart from "./images/blipkart.png";
 import github from "./images/github.png";
-import yaar from "./images/logo.png";
+import yaar from "./images/Logo.png";
 import spotify1 from "./images/spotify1.png";
 import terrarecon from "./images/terrarecon.png";
 function Project() {
