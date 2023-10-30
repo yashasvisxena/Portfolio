@@ -4,7 +4,7 @@ function Contact() {
       className="flex-col h-full w-full rounded-xl justify-center items-center"
       id="contact"
     >
-      <h2 className="mb-12 text-3xl font-bold">Contact us</h2>
+      <h2 className="mb-12 text-3xl font-bold">Contact Me</h2>
       <form className="flex flex-col">
         <div
           className="relative m-4 border-2 border-white p-2 rounded-xl"
