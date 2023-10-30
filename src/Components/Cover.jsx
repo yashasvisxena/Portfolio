@@ -1,5 +1,4 @@
 import profile from "./images/profile.jpg";
-import back from "./images/back.png";
 function Cover() {
   return (
     <div className="cover flex-col h-full w-full rounded-xl bg-[url('src/Components/images/back.png')] bg-cover backdrop-blur mb-5" id="about">
