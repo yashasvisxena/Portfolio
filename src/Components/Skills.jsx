@@ -63,6 +63,15 @@ function Skills() {
             </h1>
           </div>
         </div>
+        <div className="flex flex-col bg-[#1c1b23] rounded-xl p-2 justify-center items-center m-2 ">
+          <h1 className="font-semibold text-left h-2/6 text-lg m-2 self-start">Tools</h1>
+          <div className="flex flex-wrap w-full h-full">
+            
+            <h1 className="bg-[#14131a] m-2 border-[1px] border-yellow-500 rounded-lg text-base p-2 text-center">
+              GitHub
+            </h1>
+          </div>
+        </div>
         
       </div>
     </div>
