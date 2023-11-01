@@ -68,6 +68,9 @@ function Skills() {
           <div className="flex flex-wrap w-full h-full">
             
             <h1 className="bg-[#14131a] m-2 border-[1px] border-yellow-500 rounded-lg text-base p-2 text-center">
+              Git
+            </h1>
+            <h1 className="bg-[#14131a] m-2 border-[1px] border-green-500 rounded-lg text-base p-2 text-center">
               GitHub
             </h1>
           </div>
