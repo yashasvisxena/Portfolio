@@ -6,7 +6,7 @@ import Skills from "./Skills"
 
 function Center() {
   return (
-    <div className="flex flex-col h-full w-[80vw] ml-[20vw] mb-2 m-5 ">
+    <div className="flex flex-col w-screen h-full xl:w-[80vw] xl:ml-[20vw] xl:m-5">
       <Cover/>
       <Project/>
       <Skills/>

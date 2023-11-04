@@ -12,7 +12,7 @@ import {
 
 function Sidebar() {
   return (
-    <div className="flex bg-[#1c1b23] flex-col h-fit w-[18vw] mb-2 p-8 pt-2 m-5 rounded-xl fixed left-0 z-[1]">
+    <div className="flex-col hidden bg-[#1c1b23] md:flex xl:h-fit xl:w-[18vw] xl:mb-2 xl:p-8 xl:pt-2 xl:m-5 rounded-xl xl:fixed xl:left-0 xl:z-[1]">
       <div className="flex gap-3 m-2 p-1 pt-1">
         <div className="h-4 w-4 bg-red-600 rounded-full"></div>
         <div className="h-4 w-4 bg-green-600 rounded-full"></div>
