@@ -39,7 +39,7 @@ function Skills() {
               Framer Motion
             </h1>
             <h1 className="bg-[#14131a] m-2 border-[1px] border-white rounded-lg text-base p-2 text-center">
-              Bootstrap
+              ShadCN/ui
             </h1>
           </div>
         </div>

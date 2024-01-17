@@ -5,6 +5,7 @@ import github from "./images/github.png";
 import yaar from "./images/Logo.png";
 import spotify1 from "./images/spotify1.png";
 import terrarecon from "./images/terrarecon.png";
+import MusicPlayer from "./images/MusicPlayer.png";
 function Project() {
   return (
     <div className="flex-col h-full w-full rounded-xl" id="projects">
@@ -45,6 +46,12 @@ function Project() {
           link={"https://github.com/yashasvisxena/TerraRecon"}
           title={"TerraRecon (SIH)"}
           tech={"React | Framer Motion | TailWind CSS"}
+        />
+        <Cards
+          img={MusicPlayer}
+          link={"https://github.com/yashasvisxena/Music-Playlist-Player"}
+          title={"Music Playlist Player using Doubly Linked List"}
+          tech={"React | ShadCN/Ui | TailWind CSS"}
         />
       </div>
     </div>
