@@ -61,6 +61,9 @@ function Skills() {
             <h1 className="bg-[#14131a] m-2 border-[1px] border-white rounded-lg text-base p-2 text-center">
               MongoDB
             </h1>
+            <h1 className="bg-[#14131a] m-2 border-[1px] border-red-500 rounded-lg text-base p-2 text-center">
+              GraphQl
+            </h1>
           </div>
         </div>
         <div className="flex flex-col bg-[#1c1b23] rounded-xl p-2 justify-center items-center m-2 ">
