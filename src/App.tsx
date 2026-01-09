@@ -2,6 +2,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "./components/navbar";
 import { Outlet, useLocation } from "react-router";
 import { useEffect } from "react";
+import { Toaster } from "sonner";
 
 function App() {
   const { hash } = useLocation();
@@ -23,6 +24,7 @@ function App() {
       <div className="min-h-screen min-w-screen">
         <Navbar />
         <Outlet />
+        <Toaster richColors />
       </div>
     </ThemeProvider>
   );
