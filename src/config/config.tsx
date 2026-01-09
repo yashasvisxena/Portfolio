@@ -80,3 +80,22 @@ export const ContactConfig = {
     type: "open",
   },
 };
+
+export const ExperienceConfig = [
+  {
+    title: "SDE Intern",
+    company: "Datachecks",
+    duration: "June 2025 - November 2025",
+    location: "Remote",
+    description: [
+      "",
+    ],
+  },
+  {
+    title: "Frontend Developer Intern",
+    company: "Swyftin",
+    duration: "November 2024 - May 2025",
+    location: "Hybrid - Preet Vihar, Delhi",
+    description: [""],
+  },
+];

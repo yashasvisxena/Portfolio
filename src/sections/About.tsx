@@ -22,10 +22,7 @@ export default function About() {
   };
 
   return (
-    <section
-      id="about"
-      className="w-full max-w-7xl flex items-center min-h-[calc(100vh-4.25rem)] mx-auto p-4 px-6 md:px-8"
-    >
+    <section id="about" className="flex items-center">
       <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6 w-full">
         <div className="md:col-span-2 md:row-span-1">
           {HomeConfig.description}
@@ -42,7 +39,9 @@ export default function About() {
         <div
           className={cn(
             "md:col-span-2 md:row-span-1 flex flex-col md:flex-row items-baseline md:items-center justify-between gap-8 md:gap-4 text-left p-4 rounded-md ",
-            HomeConfig.cardBgChange ? "bg-foreground/90 text-background" : "bg-background text-foreground"
+            HomeConfig.cardBgChange
+              ? "bg-foreground/90 text-background"
+              : "bg-background text-foreground"
           )}
         >
           <h2 className="flex-1 text-4xl sm:text-5xl md:text-7xl font-mono font-thin whitespace-pre-line leading-tight">

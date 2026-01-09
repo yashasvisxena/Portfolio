@@ -21,7 +21,7 @@ function App() {
 
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="min-h-screen min-w-screen">
+      <div className="min-h-screen w-full">
         <Navbar />
         <Outlet />
         <Toaster richColors />
