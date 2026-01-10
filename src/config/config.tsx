@@ -87,9 +87,7 @@ export const ExperienceConfig = [
     company: "Datachecks",
     duration: "June 2025 - November 2025",
     location: "Remote",
-    description: [
-      "",
-    ],
+    description: [""],
   },
   {
     title: "Frontend Developer Intern",
@@ -97,5 +95,20 @@ export const ExperienceConfig = [
     duration: "November 2024 - May 2025",
     location: "Hybrid - Preet Vihar, Delhi",
     description: [""],
+  },
+];
+
+export const HighlightsConfig = [
+  {
+    title: "3+",
+    description: "Industry Level Projects",
+  },
+  {
+    title: "2",
+    description: "Internships",
+  },
+  {
+    title: "1+",
+    description: "Years of Experience",
   },
 ];
