@@ -23,31 +23,33 @@ export default function About() {
 
   return (
     <section id="about" className="flex items-center">
-      <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6 w-full">
-        <div className="md:col-span-2 md:row-span-1">
-          {HomeConfig.description}
+      <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-4 md:gap-6 w-full">
+        <div className="md:col-span-2 md:row-span-1 p-6 rounded-2xl bg-card border border-border/50 flex items-center">
+          <span className="text-lg md:text-2xl font-medium leading-relaxed text-foreground/80">
+            {HomeConfig.description}
+          </span>
         </div>
 
-        <div className="md:col-span-1 md:row-span-2 rounded-lg overflow-hidden bg-background h-[300px] md:h-full">
+        <div className="md:col-span-1 md:row-span-2 rounded-2xl overflow-hidden bg-muted h-[250px] sm:h-[350px] md:h-full border border-border/50">
           <img
             src={HomeConfig.image}
-            alt=""
+            alt="Profile"
             className="h-full w-full object-cover"
           />
         </div>
 
         <div
           className={cn(
-            "md:col-span-2 md:row-span-1 flex flex-col md:flex-row items-baseline md:items-center justify-between gap-8 md:gap-4 text-left p-4 rounded-md ",
+            "md:col-span-2 md:row-span-1 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-6 md:gap-4 p-6 rounded-2xl border border-border/50",
             HomeConfig.cardBgChange
-              ? "bg-foreground/90 text-background"
-              : "bg-background text-foreground"
+              ? "bg-foreground text-background"
+              : "bg-card text-foreground"
           )}
         >
-          <h2 className="flex-1 text-4xl sm:text-5xl md:text-7xl font-mono font-thin whitespace-pre-line leading-tight">
+          <h2 className="flex-1 text-3xl sm:text-5xl md:text-7xl font-mono tracking-tighter leading-[1.1] md:leading-tight">
             {HomeConfig.role}
           </h2>
-          <div className="flex md:flex-col items-start h-full gap-1 justify-around">
+          <div className="flex flex-wrap md:flex-col items-start gap-4 md:gap-2 md:pl-6 md:border-l md:border-current/20">
             {Object.entries(ContactConfig).map(([key, value]) => {
               const href =
                 value.type === "mailto"
@@ -66,35 +68,28 @@ export default function About() {
                   target={value.type === "open" ? "_blank" : undefined}
                   rel="noopener noreferrer"
                   className={cn(
-                    "group relative flex items-center gap-0.5 text-xs md:text-sm font-medium transition-colors w-fit",
+                    "group relative flex items-center gap-2 text-sm md:text-base font-medium transition-colors w-fit",
                     HomeConfig.cardBgChange
-                      ? "text-background hover:text-background/80"
-                      : "text-foreground hover:text-foreground/80"
+                      ? "text-background/80 hover:text-background"
+                      : "text-foreground/70 hover:text-foreground"
                   )}
                 >
                   <div className="flex items-center gap-2">
-                    {isCopied ? (
-                      <Check className="h-4 w-4 text-green-500" />
-                    ) : (
-                      value.icon
-                    )}
-                    <span className="capitalize">
+                    <span className="shrink-0">
+                      {isCopied ? (
+                        <Check className="h-4 w-4 text-green-500" />
+                      ) : (
+                        value.icon
+                      )}
+                    </span>
+                    <span className="capitalize whitespace-nowrap">
                       {isCopied ? "Copied!" : key}
                     </span>
                   </div>
 
                   {!isCopied && (
-                    <ArrowUpRight className="h-3.5 w-3.5 opacity-0 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100" />
+                    <ArrowUpRight className="h-3.5 w-3.5 opacity-0 -translate-x-1 translate-y-1 transition-all duration-300 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100" />
                   )}
-
-                  <span
-                    className={cn(
-                      "absolute -bottom-1 left-0 h-px w-0  transition-all duration-300 group-hover:w-full",
-                      HomeConfig.cardBgChange
-                        ? "bg-background/50"
-                        : "bg-foreground/50"
-                    )}
-                  />
                 </a>
               );
             })}

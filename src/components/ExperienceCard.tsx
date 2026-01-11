@@ -8,26 +8,38 @@ export const ExperienceCard = ({
   description,
 }: (typeof ExperienceConfig)[0]) => {
   return (
-    <div className="flex items-center justify-between px-2 w-full">
-      <div className="flex flex-col gap-2">
-        <p className="text-xl md:text-2xl font-semibold">
-          {title} at {company}
-        </p>
-        <p className="text-lg md:text-xl font-normal px-2">{location}</p>
-        <div className="w-full">
-          {description.map((desc, index) => (
-            <p
-              key={index}
-              className="text-sm md:text-base font-normal text-foreground/60 px-2 mb-2"
-            >
-              {desc}
-            </p>
-          ))}
+    <div className="flex flex-col md:flex-row md:items-start justify-between w-full py-6 gap-4 border-b border-foreground/10 last:border-0 px-1">
+      <div className="flex flex-col gap-2 flex-1">
+        <div className="flex flex-col gap-0.5">
+          <h3 className="text-xl md:text-2xl font-bold leading-tight">
+            {title}{" "}
+            <span className="font-normal text-foreground/60 text-lg md:text-xl">
+              at
+            </span>{" "}
+            {company}
+          </h3>
+          <p className="text-base md:text-lg font-medium text-foreground/70">
+            {location}
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-2 mt-2">
+          {description.map(
+            (desc, index) =>
+              desc && (
+                <div key={index} className="flex gap-2">
+                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-foreground/30 shrink-0" />
+                  <p className="text-sm md:text-base font-normal text-foreground/60 leading-relaxed">
+                    {desc}
+                  </p>
+                </div>
+              )
+          )}
         </div>
       </div>
-      <span className="w-1/3 text-end text-xl md:text-2xl font-semibold">
-        {duration}
-      </span>
+      <div className="md:text-right shrink-0">
+        <span className="text-xl md:text-2xl font-semibold">{duration}</span>
+      </div>
     </div>
   );
 };
