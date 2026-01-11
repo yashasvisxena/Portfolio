@@ -19,7 +19,9 @@ export const Highlights = () => {
               <p className="text-3xl font-semibold text-center px-3 py-1">
                 {highlight.title}
               </p>
-              <p className="text-center text-2xl px-3 py-1">{highlight.description}</p>
+              <p className="text-center text-2xl px-3 py-1">
+                {highlight.description}
+              </p>
             </div>
           ))}
         </div>
