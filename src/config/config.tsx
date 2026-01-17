@@ -88,6 +88,17 @@ export const ExperienceConfig = [
     duration: "June 2025 - November 2025",
     location: "Remote",
     description: [""],
+    techStack: [
+      "TypeScript",
+      "NextJS",
+      "AuthJS",
+      "TailwindCSS",
+      "Shadcn/UI",
+      "Zustand",
+      "Tanstack Query",
+      "Axios",
+      "LangFuse",
+    ],
   },
   {
     title: "Frontend Developer Intern",
@@ -95,6 +106,17 @@ export const ExperienceConfig = [
     duration: "November 2024 - May 2025",
     location: "Hybrid - Preet Vihar, Delhi",
     description: [""],
+    techStack: [
+      "TypeScript",
+      "NextJS",
+      "AuthJS",
+      "ReactFlow",
+      "TailwindCSS",
+      "Shadcn/UI",
+      "Zustand",
+      "Tanstack Query",
+      "Axios",
+    ],
   },
 ];
 

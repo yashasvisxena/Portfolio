@@ -1,4 +1,5 @@
 import type { ExperienceConfig } from "@/config/config";
+import { Badge } from "./ui/badge";
 
 export const ExperienceCard = ({
   title,
@@ -6,6 +7,7 @@ export const ExperienceCard = ({
   duration,
   location,
   description,
+  techStack,
 }: (typeof ExperienceConfig)[0]) => {
   return (
     <div className="flex flex-col md:flex-row md:items-start justify-between w-full py-6 gap-4 border-b border-foreground/10 last:border-0 px-1">
@@ -21,6 +23,11 @@ export const ExperienceCard = ({
           <p className="text-base md:text-lg font-medium text-foreground/70">
             {location}
           </p>
+          <div className="flex flex-wrap gap-2 mt-2">
+            {techStack.map((tech, index) => (
+              <Badge key={index}>{tech}</Badge>
+            ))}
+          </div>
         </div>
 
         <div className="flex flex-col gap-2 mt-2">
