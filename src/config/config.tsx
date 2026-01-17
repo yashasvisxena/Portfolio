@@ -134,3 +134,42 @@ export const HighlightsConfig = [
     description: "Years of Experience",
   },
 ];
+
+export const SkillsConfig = [
+  {
+    title: "Languages",
+    skills: ["TypeScript", "JavaScript", "Java", "SQL", "Python", "HTML"],
+  },
+  {
+    title: "Frontend",
+    skills: [
+      "React",
+      "NextJS",
+      "ReactFlow",
+      "TailwindCSS",
+      "Shadcn/UI",
+      "Zustand",
+      "Redux Toolkit",
+      "Tanstack Query",
+      "Axios",
+      "Zod",
+    ],
+  },
+  {
+    title: "Backend",
+    skills: [
+      "NodeJS",
+      "Express",
+      "WebSockets - Socket.IO",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "Redis",
+      "Message Queue - BullMQ",
+    ],
+  },
+  {
+    title: "Tools",
+    skills: ["Git", "GitHub", "Postman", "VS Code", "Figma"],
+  },
+];

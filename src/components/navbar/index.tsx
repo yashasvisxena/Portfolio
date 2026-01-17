@@ -35,11 +35,10 @@ const Navbar = () => {
                     if (element) {
                       if (targetId === "about") {
                         window.scrollTo({ top: 0, behavior: "smooth" });
-                        window.history.pushState(null, "", href);
                       } else {
                         element.scrollIntoView({ behavior: "smooth" });
-                        window.history.pushState(null, "", href);
                       }
+                      window.history.pushState(null, "", href);
                     }
                   }
                 }}
