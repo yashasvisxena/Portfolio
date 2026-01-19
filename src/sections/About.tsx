@@ -33,8 +33,10 @@ export default function About() {
         <div className="md:col-span-1 md:row-span-2 rounded-2xl overflow-hidden bg-muted h-[250px] sm:h-[350px] md:h-full border border-border/50">
           <img
             src={HomeConfig.image}
-            alt="Profile"
+            alt="Yashasvi Saxena - Full-Stack Developer"
             className="h-full w-full object-cover"
+            loading="eager"
+            fetchPriority="high"
           />
         </div>
 
