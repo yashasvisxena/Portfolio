@@ -1,4 +1,4 @@
-import type { ExperienceConfig } from '@/config/config';
+import type { ExperienceConfig } from '@/config/experienceConfig';
 
 import { Badge } from './ui/badge';
 

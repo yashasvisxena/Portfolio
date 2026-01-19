@@ -1,4 +1,4 @@
-import { HighlightsConfig } from '@/config/config';
+import { HighlightsConfig } from '@/config/highlightsSkillConfig';
 import { cn } from '@/lib/utils';
 
 export const Highlights = () => {

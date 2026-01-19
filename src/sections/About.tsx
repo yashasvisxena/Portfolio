@@ -1,4 +1,5 @@
-import { ContactConfig, HomeConfig } from '@/config/config';
+import { HomeConfig } from '@/config/basicConfig';
+import { ContactConfig } from '@/config/contactConfig';
 import { cn } from '@/lib/utils';
 import { ArrowUpRight, Check } from 'lucide-react';
 import { useState } from 'react';

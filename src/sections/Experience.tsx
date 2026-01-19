@@ -1,5 +1,5 @@
 import { ExperienceCard } from '@/components/ExperienceCard';
-import { ExperienceConfig } from '@/config/config';
+import { ExperienceConfig } from '@/config/experienceConfig';
 
 const Experience = () => {
   return (
@@ -8,7 +8,7 @@ const Experience = () => {
         <p className='text-2xl border border-foreground/20 rounded-full font-semibold text-start px-3 py-1'>
           Experience
         </p>
-        <div className='w-full'>
+        <div className='w-full px-2'>
           {ExperienceConfig.map((exp, index) => (
             <ExperienceCard key={index} {...exp} />
           ))}

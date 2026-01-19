@@ -1,6 +1,6 @@
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
-import { SkillsConfig } from '@/config/config';
+import { SkillsConfig } from '@/config/highlightsSkillConfig';
 
 export const Skills = () => {
   return (
