@@ -15,7 +15,7 @@ export default function LandingPage() {
     <main className="w-full max-w-7xl mx-auto p-4 px-4 md:px-8 space-y-12 md:space-y-16">
       <Suspense
         fallback={
-          <div className="h-screen w-full flex items-center justify-center">
+          <div className="h-[50vh] w-full flex items-center justify-center">
             <Spinner className="size-8 text-primary" />
           </div>
         }
