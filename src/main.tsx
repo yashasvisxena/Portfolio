@@ -1,12 +1,13 @@
-import { createRoot } from "react-dom/client";
-import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router";
-import App from "./App.tsx";
-import LandingPage from "./pages/LandingPage.tsx";
+import { createRoot } from 'react-dom/client';
+import { RouterProvider, createBrowserRouter } from 'react-router';
+
+import App from './App.tsx';
+import './index.css';
+import LandingPage from './pages/LandingPage.tsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
     children: [
       {
@@ -17,6 +18,6 @@ const router = createBrowserRouter([
   },
 ]);
 
-createRoot(document.getElementById("root")!).render(
+createRoot(document.getElementById('root')!).render(
   <RouterProvider router={router} />
 );
