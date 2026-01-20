@@ -37,7 +37,12 @@ const Navbar = () => {
                       if (targetId === 'about') {
                         window.scrollTo({ top: 0, behavior: 'smooth' });
                       } else {
-                        element.scrollIntoView({ behavior: 'smooth' });
+                        const yOffset = -80;
+                        const y =
+                          element.getBoundingClientRect().top +
+                          window.pageYOffset +
+                          yOffset;
+                        window.scrollTo({ top: y, behavior: 'smooth' });
                       }
                       window.history.pushState(null, '', href);
                     }

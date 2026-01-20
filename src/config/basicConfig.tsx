@@ -3,9 +3,9 @@ export const NavbarConfig = {
   name: 'yashasvisxena',
   links: [
     { label: 'About', href: '/' },
-    { label: 'Experience', href: '#experience' },
+    { label: 'Skills', href: '#skills' },
     { label: 'Projects', href: '#projects' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Experience', href: '#experience' },
   ],
   themeModeEnabled: import.meta.env.VITE_ThemeModeEnabled === 'true',
   defaultTheme: import.meta.env.VITE_DefaultTheme || 'dark',

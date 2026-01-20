@@ -31,7 +31,7 @@ const SkillCard = ({ title, skills }: (typeof SkillsConfig)[0]) => {
       <div className='flex flex-wrap gap-2'>
         {skills.map((skill, index) => (
           <Badge
-            className='text-sm md:text-base bg-accent-foreground md:px-4 px-3 md:py-1 py-1'
+            className='text-sm md:text-base py-1 px-4 bg-foreground/10 text-foreground hover:bg-foreground/20 border-none'
             key={index}
           >
             {skill}

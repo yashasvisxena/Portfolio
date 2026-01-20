@@ -27,7 +27,7 @@ export const ExperienceCard = ({
           <div className='flex flex-wrap gap-2 mt-2'>
             {techStack.map((tech, index) => (
               <Badge
-                className='text-xs md:text-sm bg-accent-foreground'
+                className='text-xs md:text-sm py-1 px-3 bg-foreground/10 text-foreground hover:bg-foreground/20 border-none'
                 key={index}
               >
                 {tech}
