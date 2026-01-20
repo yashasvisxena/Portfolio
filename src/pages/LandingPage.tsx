@@ -1,5 +1,6 @@
 import { Spinner } from '@/components/ui/spinner';
 import { showHighlights } from '@/config/highlightsSkillConfig';
+import Project from '@/sections/Project';
 import { Suspense, lazy } from 'react';
 
 const About = lazy(() => import('@/sections/About'));
@@ -24,6 +25,7 @@ export default function LandingPage() {
         <About />
         <Skills />
         {showHighlights && <Highlights />}
+        <Project />
         <Experience />
       </Suspense>
     </main>

@@ -1,0 +1,78 @@
+export const ProjectConfig = [
+  {
+    name: 'Leetstats',
+    description:
+      'A website for college professors to track their students performance in leetcode by using Leetcode graphql API. User can upload a .xlsx file containing the leetcode username of the students or manually add the leetcode username of the students and the website will fetch the data from leetcode and show it in a table.',
+    techStack: [
+      'JavaScript',
+      'ReactJS',
+      'TailwindCSS',
+      'Shadcn UI',
+      'React Router',
+      'React Hook Form',
+      'Redux',
+      'NodeJS',
+      'Appwrite',
+      'Apollo Client-Server',
+    ],
+    image: '/projects/leetcode.png',
+    features: [
+      'Responsive design with light/dark mode',
+      'Upload a .xlsx file containing the leetcode username of the students or manually add the leetcode username of the students',
+      'Fetch the data from leetcode and show it in a table',
+      'Sort the data by leetcode username',
+      'Search the data by leetcode username',
+      'Export the data to a .pdf file',
+    ],
+    github: 'https://github.com/yashasvisxena/leetstats',
+    live: 'https://leetstats.yashasvisaxena.in',
+  },
+  {
+    name: 'Blogi - Blogging Platform',
+    description:
+      'A blogging platform where users can create, read, update, and delete their blogs. Other users can see the blogs of other users. Supports image upload and search functionality along with pagination.',
+    techStack: [
+      'TypeScript',
+      'NextJS',
+      'TailwindCSS',
+      'Shadcn UI',
+      'React Hook Form',
+      'Zod',
+      'Zustand',
+      'Cloudinary',
+      'Multer',
+      'Prisma',
+      'PostgreSQL',
+      'JWT Authentication',
+    ],
+    image: '/projects/blogi.png',
+    features: [
+      'Responsive design with light/dark mode',
+      'Upload an image',
+      'Search the blogs by title',
+      'Sort the blogs by title and date, pagination',
+    ],
+    github: 'https://github.com/yashasvisxena/blogi',
+    live: 'https://blogi.yashasvisaxena.in',
+  },
+  {
+    name: 'Audio Cutter',
+    description:
+      'An audio cutter where users can cut their audio files into smaller chunks.',
+    techStack: [
+      'JavaScript',
+      'ReactJS',
+      'Mantine UI',
+      'WaveSurfer.js',
+      'Zustand',
+    ],
+    image: '/projects/audiocutter.png',
+    features: [
+      'Upload an audio file',
+      'Cut the audio file into smaller chunks',
+      'Download the audio file',
+    ],
+    github: 'https://github.com/yashasvisxena/videodubberai',
+    live: 'https://audiocutter.yashasvisaxena.in',
+  },
+];
