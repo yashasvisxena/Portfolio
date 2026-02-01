@@ -1,5 +1,30 @@
 export const ProjectConfig = [
   {
+    name: 'Finboard',
+    description:
+      'A customizable widget based dashboard for users to track stocks, crypto, and other assets using external APIs.',
+    techStack: [
+      'TypeScript',
+      'NextJS',
+      'TailwindCSS',
+      'Shadcn UI',
+      'React Hook Form',
+      'Zod',
+      'Zustand',
+    ],
+    image: '/projects/finboard.png',
+    features: [
+      'Use external APIs to fetch data',
+      'Select fields to display',
+      'Represent Data in card, chart or tabular widgets with refresh interval, search, pagination and sort',
+      'Move the widgets to any position',
+      'Export and import dashboard layout',
+      'Responsive design with light/dark mode',
+    ],
+    github: 'https://github.com/yashasvisxena/finboard',
+    live: 'https://finboard.yashasvisaxena.in',
+  },
+  {
     name: 'Leetstats',
     description:
       'A website for college professors to track their students performance in leetcode by using Leetcode graphql API. User can upload a .xlsx file containing the leetcode username of the students or manually add the leetcode username of the students and the website will fetch the data from leetcode and show it in a table.',
